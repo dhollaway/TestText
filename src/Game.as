@@ -57,17 +57,18 @@ public class Game extends Sprite
 
         //http://forum.starling-framework.org/topic/bad-quality-using-distancefieldstyle-in-bitmapfonttextrenderer
         //"Beirut"
-        var texture:Texture = assets.getTexture("gameFont");
+        /*var texture:Texture = assets.getTexture("gameFont");
         var xml:XML = XML (assets.getXml ("gameFont.fnt"));
         trace("texture is null? " + (texture==null));
         trace("font xml is null? " + (xml == null));
-        var bf:BitmapFont = new BitmapFont (texture, xml);
+        var bf:BitmapFont = new BitmapFont (texture, xml);*/
 
-        var textField:starling.text.TextField = new starling.text.TextField (200, 100, "HELLO");
-        textField.format.font = "Beirut";
+        var textField:starling.text.TextField = new starling.text.TextField (500, 100, "BitMap Fonts!");
+        textField.format.font = "gameFont";
+        textField.format.color = 0xffffff;
         BitmapFont.NATIVE_SIZE;
         textField.format.size = -1;
-        textField.x = 50;
+        textField.x = 5;
         textField.y = 100;
 
         textField.border = true;
